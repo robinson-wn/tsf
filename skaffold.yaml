@@ -1,0 +1,15 @@
+apiVersion: skaffold/v2beta25
+kind: Config
+metadata:
+  name: k8sparktsf
+build:
+  tagPolicy:
+    sha256: { }
+  artifacts:
+  - image: "k8sparktsf"
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - resources/tsf.yaml

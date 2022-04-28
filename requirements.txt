@@ -1,0 +1,8 @@
+numpy
+pandas>=1.4.1
+# Current version will be 3.2.1, but conda fails if you specify the version
+pyspark
+matplotlib>=3.5.1
+pystan==2.19.1.1
+prophet>=1.0.1
+plotly
